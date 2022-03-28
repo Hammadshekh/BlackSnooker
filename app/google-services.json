@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "596595761519",
+    "project_id": "black-8-snooker",
+    "storage_bucket": "black-8-snooker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:596595761519:android:aa64fcc4e88409c2ce889a",
+        "android_client_info": {
+          "package_name": "com.example.black8snooker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "596595761519-gn4v7l0j5fkfbmi6cr5uh5go2827at2g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.black8snooker",
+            "certificate_hash": "5d7f3fa8c4077020e11922516bca6de37861351d"
+          }
+        },
+        {
+          "client_id": "596595761519-urkadgn4cmhsc19iftg8johg3adtotpq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5LrPFx067unSbNQe9X8NKEl70TuEQ9z0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "596595761519-urkadgn4cmhsc19iftg8johg3adtotpq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Black 8 Snooker</string>
+    <string name="forget_password">Forget Password?</string>
+    <string name="login">LOGIN</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="dont_have_an_account">Dont Have An Account</string>
+    <string name="signup">SignUp</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="user_name">User Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="already_have_an_account">Already Have An Account</string>
+    <string name="messenger">Messenger</string>
+    <string name="back_button">back button</string>
+    <string name="log_out">Log Out</string>
+    <string name="hammad_sheikh">Hammad Sheikh</string>
+    <string name="type_a_message">Type a message</string>
+    <string name="this_is_sent_message">This is Sent Message.</string>
+    <string name="this_is_receive_message">This is receive message.</string>
+</resources>

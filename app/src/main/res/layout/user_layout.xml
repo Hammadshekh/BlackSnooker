@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:padding="8dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/user_imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/hammad"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:riv_corner_radius="40dp" />
+
+        <TextView
+            android:id="@+id/userName_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hammad_sheikh"
+            android:layout_marginStart="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/user_imageView"
+            app:layout_constraintStart_toEndOf="@+id/user_imageView"
+            app:layout_constraintTop_toTopOf="@+id/user_imageView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
