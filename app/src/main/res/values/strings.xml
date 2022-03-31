@@ -2,7 +2,6 @@
     <string name="app_name">Black 8 Snooker</string>
     <string name="forget_password">Forget Password?</string>
     <string name="login">LOGIN</string>
-    <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="dont_have_an_account">Dont Have An Account</string>
     <string name="signup">SignUp</string>
@@ -17,4 +16,15 @@
     <string name="type_a_message">Type a message</string>
     <string name="this_is_sent_message">This is Sent Message.</string>
     <string name="this_is_receive_message">This is receive message.</string>
+    <string name="home">Home</string>
+    <string name="routines">Routines</string>
+    <string name="setting">Setting</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="black_8_snooker">Black 8 Snooker</string>
+    <string name="email">Email</string>
+    <string name="profile">PROFILE</string>
+    <string name="live">LIVE</string>
+    <string name="chat">CHAT</string>
+    <string name="about">ABOUT</string>
 </resources>

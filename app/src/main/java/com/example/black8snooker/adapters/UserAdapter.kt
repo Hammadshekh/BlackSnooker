@@ -8,10 +8,9 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.messenger.ChatActivity
-import com.example.messenger.R
+import com.example.black8snooker.R
+import com.example.black8snooker.activities.ChatActivity
 import com.example.messenger.User
-import com.google.firebase.auth.FirebaseAuth
 
 class UserAdapter(val context: Context, val userList: ArrayList<User>) :
     RecyclerView.Adapter<UserAdapter.UserViewHolder>() {

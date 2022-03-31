@@ -16,7 +16,7 @@ import com.example.messenger.adapters.UserAdapter
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 
-class MainActivity : AppCompatActivity() {
+class ChatlistActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var userList: ArrayList<User>
     private lateinit var adapter: UserAdapter
@@ -50,7 +50,7 @@ class MainActivity : AppCompatActivity() {
 
             override fun onCancelled(error: DatabaseError) {
                 Toast.makeText(
-                    this@MainActivity, "testing..",
+                    this@ChatlistActivity, "testing..",
                     Toast.LENGTH_SHORT
                 )
                     .show()

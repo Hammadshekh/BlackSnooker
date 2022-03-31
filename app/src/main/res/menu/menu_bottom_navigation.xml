@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_home"
+        android:iconTint="@color/white"
+
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/routineFragment"
+        android:icon="@drawable/ic_billiard_cue_svgrepo_com"
+        android:iconTint="@color/white"
+        android:title="@string/routines" />
+
+    <item
+        android:id="@+id/settingFragment"
+        android:icon="@drawable/ic_settings"
+        android:iconTint="@color/white"
+        android:title="@string/setting" />
+</menu>

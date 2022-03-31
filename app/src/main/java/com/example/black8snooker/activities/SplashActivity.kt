@@ -20,7 +20,7 @@ class SplashActivity : AppCompatActivity() {
 
         Handler(Looper.getMainLooper()).postDelayed({
             if(Firebase.auth.currentUser != null){
-                startActivity(Intent( this,MainActivity::class.java))
+                startActivity(Intent( this,DashboardActivity::class.java))
                 finish()
             } else{
                 startActivity(Intent( this,LoginActivity::class.java))

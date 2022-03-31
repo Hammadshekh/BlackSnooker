@@ -25,22 +25,22 @@ class SignUpActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
         supportActionBar?.hide()
         binding.loginTextView.setOnClickListener {
-            val intent = Intent(this, SignUpActivity::class.java)
-            startActivity(intent)
-        }
-        binding.btnBack.setOnClickListener {
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
             finish()
         }
+
+        binding.backBtn.setOnClickListener {
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+        }
+
         binding.signUpBtn.setOnClickListener {
             val name = binding.userNameEditText.text.trim().toString()
             val email = binding.userEmailEditText.text.trim().toString()
             val password = binding.userPasswordEditText.text.trim().toString()
-
             signUp(name, email, password)
         }
-
     }
 
     private fun signUp(name: String, email: String, password: String) {

@@ -10,50 +10,27 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".SignUpActivity">
-
-
-        <ImageView
-            android:id="@+id/btnBack"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_margin="10dp"
-            android:contentDescription="@string/back_button"
-            android:src="@drawable/ic_back"
-            app:layout_constraintBottom_toTopOf="@+id/view"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:tint="#1007D3" />
-
-
-        <View
-            android:id="@+id/view"
-            android:layout_width="190dp"
-            android:layout_height="520dp"
-            android:background="@drawable/bg_gradient"
-            app:layout_constraintBottom_toBottomOf="@+id/cardView"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/cardView" />
-
+        android:background="@drawable/backgroundsnkr">
 
         <LinearLayout
             android:id="@+id/layout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
             android:orientation="vertical"
+
             app:layout_constraintBottom_toTopOf="@+id/cardView"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <ImageView
-                android:id="@+id/imageView_logo"
-                android:layout_width="60dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="55dp"
-                android:layout_marginEnd="50dp"
-                android:src="@drawable/logo" />
+            <!--  <ImageView
+                  android:id="@+id/imageView5"
+                  android:layout_width="50dp"
+                  android:layout_height="50dp"
+                  android:layout_marginStart="60dp"
+                  android:layout_marginEnd="50dp"
+                  android:scaleType="centerCrop"
+                  android:src="@drawable/logo" />-->
 
             <TextView
                 android:id="@+id/logo_textView"
@@ -61,28 +38,33 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
-                android:text="@string/messenger"
-                android:textColor="@color/blue"
+                android:fontFamily="@font/belgrano"
+                android:text="@string/black_8_snooker"
+                android:textColor="@color/white"
                 android:textSize="20sp"
                 android:textStyle="bold" />
         </LinearLayout>
+
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
+            android:backgroundTint="@color/transparent"
             android:elevation="200dp"
-            app:cardCornerRadius="25dp"
-            app:cardElevation="20dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/layout">
+            app:layout_constraintTop_toTopOf="parent">
+
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@color/transparent"
                 android:orientation="vertical">
 
                 <TextView
@@ -90,19 +72,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginTop="15dp"
+                    android:layout_margin="15dp"
+                    android:fontFamily="@font/belgrano"
                     android:text="@string/sign_up"
-                    android:textColor="@color/blue"
-                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
                     android:textStyle="bold" />
-
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:id="@+id/imgPick"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
-                    android:src="@drawable/ic_person" />
 
                 <EditText
                     android:id="@+id/userName_editText"
@@ -111,13 +86,15 @@
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="15dp"
-                    android:backgroundTint="@color/black"
+                    android:backgroundTint="@color/white"
                     android:ems="10"
+                    android:fontFamily="@font/belgrano"
                     android:hint="User Name"
                     android:importantForAutofill="no"
                     android:inputType="textEmailAddress"
-                    android:paddingStart="8dp"
-                    android:textColorHint="@color/black" />
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
 
                 <EditText
                     android:id="@+id/userEmail_editText"
@@ -126,13 +103,15 @@
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="15dp"
-                    android:backgroundTint="@color/black"
+                    android:backgroundTint="@color/white"
                     android:ems="10"
+                    android:fontFamily="@font/belgrano"
                     android:hint="@string/email"
                     android:importantForAutofill="no"
                     android:inputType="textEmailAddress"
-                    android:paddingStart="8dp"
-                    android:textColorHint="@color/black" />
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
 
                 <EditText
                     android:id="@+id/userPassword_editText"
@@ -142,31 +121,30 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="15dp"
                     android:autofillHints="no"
-                    android:backgroundTint="@color/black"
+                    android:backgroundTint="@color/white"
                     android:ems="10"
                     android:hint="@string/password"
                     android:inputType="textPassword"
-                    android:paddingStart="8dp"
-                    android:textColorHint="@color/black" />
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/signUp_btn"
-                    android:layout_width="190dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_margin="10dp"
                     android:background="@drawable/bg_gradient_button"
                     android:clickable="true"
                     android:focusable="true"
+                    android:fontFamily="@font/belgrano"
+                    android:paddingStart="70dp"
+                    android:paddingEnd="70dp"
                     android:text="@string/sign_up"
                     android:textColor="@color/white"
                     android:textStyle="bold" />
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="90dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/wave" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -183,8 +161,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:fontFamily="@font/belgrano"
                 android:text="@string/already_have_an_account"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="15sp"
                 android:textStyle="bold" />
 
@@ -193,11 +173,23 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="2dp"
+                android:fontFamily="@font/belgrano"
                 android:text="@string/login"
                 android:textColor="@color/red"
                 android:textSize="15sp"
                 android:textStyle="bold" />
         </LinearLayout>
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_back"
+            app:tint="@color/white"
+            />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
 
