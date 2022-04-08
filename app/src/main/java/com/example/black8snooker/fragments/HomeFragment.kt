@@ -1,19 +1,16 @@
 package com.example.black8snooker.fragments
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
-import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.GridLayoutManager
 import com.example.black8snooker.R
-import com.example.black8snooker.activities.ChatlistActivity
-import com.example.black8snooker.activities.LiveVideoActivity
-import com.example.black8snooker.activities.LoginActivity
-import com.example.black8snooker.databinding.ActivityLoginBinding
+import com.example.black8snooker.adapters.DashboardAdapter
 import com.example.black8snooker.databinding.FragmentHomeBinding
+import com.example.black8snooker.model.Dashboard
 
 class HomeFragment : Fragment() {
     private lateinit var binding: FragmentHomeBinding
@@ -26,26 +23,15 @@ class HomeFragment : Fragment() {
         // Inflate the layout for this fragment
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_home, container, false)
 
+        val dashboard = mutableListOf<Dashboard>()
+        dashboard.add(Dashboard("Chat", R.drawable.chat))
+        dashboard.add(Dashboard("Live", R.drawable.live))
+        dashboard.add(Dashboard("Youtube",R.drawable.youtube))
+        dashboard.add(Dashboard("Follow us",R.drawable.facebook))
+        /*songObject.add(Dashboard("Promotion", "sheikh"))*/
 
-
-        binding.chatCardView.setOnClickListener {
-            val intent = Intent(requireContext(), ChatlistActivity::class.java)
-            requireContext().startActivity(intent)
-        }
-
-        binding.liveCardView.setOnClickListener {
-            val intent = Intent(requireContext(), LiveVideoActivity::class.java)
-            requireContext().startActivity(intent)
-        }
-
-        /* binding.aboutCardView.setOnClickListener {
-             val intent = Intent(requireContext(),A::class.java)
-             requireContext().startActivity(intent)
-         }*/
-
-        binding.aboutCardView.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_aboutFragment)
-        }
+        binding.dashboardRecyclerView.adapter = DashboardAdapter(dashboard as ArrayList<Dashboard>,requireActivity())
+        binding.dashboardRecyclerView.layoutManager = GridLayoutManager(requireContext(),2)
         return binding.root
     }
 
