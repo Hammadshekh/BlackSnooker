@@ -20,5 +20,6 @@ class DashboardActivity : AppCompatActivity() {
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
         navController = findNavController(R.id.fragment)
         bottomNavigationView.setupWithNavController(navController)
+
     }
 }

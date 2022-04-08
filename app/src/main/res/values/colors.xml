@@ -10,5 +10,7 @@
     <color name="blue">#303F9F</color>
     <color name="red">#D61313</color>
     <color name="yellow">#FBC02D</color>
-    <color name="transparent">#00FFFFFF</color>
+    <color name="gray">#8c949a</color>
+    <color name="darkgray">#333742</color>
+    <color name="transparent">#eeb800</color>
 </resources>

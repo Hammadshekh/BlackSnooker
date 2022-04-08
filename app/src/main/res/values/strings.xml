@@ -3,7 +3,7 @@
     <string name="forget_password">Forget Password?</string>
     <string name="login">LOGIN</string>
     <string name="password">Password</string>
-    <string name="dont_have_an_account">Dont Have An Account</string>
+    <string name="dont_have_an_account">Create New Account </string>
     <string name="signup">SignUp</string>
     <string name="sign_up">Sign Up</string>
     <string name="user_name">User Name</string>
@@ -11,7 +11,7 @@
     <string name="already_have_an_account">Already Have An Account</string>
     <string name="messenger">Messenger</string>
     <string name="back_button">back button</string>
-    <string name="log_out">Log Out</string>
+    <string name="log_out">LogOut</string>
     <string name="hammad_sheikh">Hammad Sheikh</string>
     <string name="type_a_message">Type a message</string>
     <string name="this_is_sent_message">This is Sent Message.</string>
@@ -27,4 +27,15 @@
     <string name="live">LIVE</string>
     <string name="chat">CHAT</string>
     <string name="about">ABOUT</string>
+    <string name="follow_us_on_facebook">Follow us on facebook</string>
+    <string name="facebook">Facebook</string>
+    <string name="rules_of_snooker">Rules of Snooker</string>
+    <string name="wpbsa_official_rules_of_snooker">WPBSA official rules of snooker</string>
+    <string name="privacy_and_policies_amp_user_agreement"><![CDATA[Privacy and policies & user agreement]]></string>
+    <string name="black_8_snooker_academy">BLACK 8 SNOOKER ACADEMY</string>
+    <string name="what_we_do_to_keep_your_privacy_in_check">What we do to keep your privacy in check</string>
+    <string name="youtube">Youtube</string>
+    <string name="welcome_back">Welcome back!</string>
+    <string name="login_to_continue">Login to continue</string>
+    <string name="create_new_account">Create New Account</string>
 </resources>

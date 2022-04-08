@@ -5,7 +5,6 @@
         android:id="@+id/homeFragment"
         android:icon="@drawable/ic_home"
         android:iconTint="@color/white"
-
         android:title="@string/home" />
 
     <item

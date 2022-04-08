@@ -12,14 +12,65 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@color/black">
+
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:srcCompat="@drawable/ic_back"
+                app:tint="@color/white" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/profileImage_cardView"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="90dp">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/User_imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/black"
+                    android:src="@drawable/ic_person"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:riv_corner_radius="90dp" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/Username_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hammad_sheikh"
+                android:layout_marginStart="4dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:fontFamily="@font/belgrano"
+                app:layout_constraintBottom_toBottomOf="@+id/privacy_imageView"
+                app:layout_constraintStart_toEndOf="@+id/privacy_imageView"
+                app:layout_constraintTop_toTopOf="@+id/privacy_imageView" />
+        </com.google.android.material.appbar.MaterialToolbar>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/userList_recyclerView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:listitem="@layout/user_layout"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="1dp" />
+            tools:listitem="@layout/user_layout" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
+    <!--#1b1e2d-->

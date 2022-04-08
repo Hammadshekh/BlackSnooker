@@ -10,10 +10,11 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:padding="8dp">
+        android:padding="8dp"
+        android:background="#333742">
 
         <com.makeramen.roundedimageview.RoundedImageView
-            android:id="@+id/user_imageView"
+            android:id="@+id/privacy_imageView"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_margin="8dp"
@@ -28,12 +29,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/hammad_sheikh"
+            android:fontFamily="@font/belgrano"
             android:layout_marginStart="16dp"
             android:textStyle="bold"
-            android:textColor="@color/black"
-            app:layout_constraintBottom_toBottomOf="@+id/user_imageView"
-            app:layout_constraintStart_toEndOf="@+id/user_imageView"
-            app:layout_constraintTop_toTopOf="@+id/user_imageView" />
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/privacy_imageView"
+            app:layout_constraintStart_toEndOf="@+id/privacy_imageView"
+            app:layout_constraintTop_toTopOf="@+id/privacy_imageView" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

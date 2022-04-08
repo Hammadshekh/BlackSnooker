@@ -10,25 +10,71 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#64000000">
+        android:background="#1b1e2d">
 
-        <ImageView
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/profileImage_cardView"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="90dp">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/User_imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/black"
+                    android:src="@drawable/ic_person"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:riv_corner_radius="90dp" />
+            </androidx.cardview.widget.CardView>
+
+
+
+            <TextView
+                android:id="@+id/Username_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:fontFamily="@font/belgrano"
+                android:text="@string/hammad_sheikh"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/privacy_imageView"
+                app:layout_constraintStart_toEndOf="@+id/privacy_imageView"
+                app:layout_constraintTop_toTopOf="@+id/privacy_imageView" />
+
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+        <View
             android:id="@+id/imageView2"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:alpha="0.7"
-            android:foreground="#1E1C1C"
+            android:layout_height="230dp"
             android:scaleType="centerCrop"
             android:src="@drawable/back"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@id/toolbar" />
 
         <androidx.cardview.widget.CardView
             android:id="@+id/chat_cardView"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_margin="20dp"
+            android:backgroundTint="@color/white"
             android:clickable="true"
             android:focusable="true"
             app:cardCornerRadius="10dp"
@@ -50,6 +96,7 @@
                     android:layout_gravity="center"
                     android:layout_margin="30dp"
                     android:elevation="5dp"
+
                     android:src="@drawable/chat"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -137,7 +184,7 @@
                     android:layout_margin="30dp"
                     android:elevation="5dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/ic_person"
+                    android:src="@drawable/youtube"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -148,7 +195,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
                     android:fontFamily="@font/belgrano"
-                    android:text="@string/profile"
+                    android:text="@string/youtube"
                     android:textColor="@color/black"
                     android:textSize="18sp"
                     android:textStyle="bold"
@@ -180,7 +227,7 @@
                     android:layout_gravity="center"
                     android:layout_margin="30dp"
                     android:elevation="5dp"
-                    android:src="@drawable/ic_info"
+                    android:src="@drawable/facebook"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -191,7 +238,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
                     android:fontFamily="@font/belgrano"
-                    android:text="@string/about"
+                    android:text="Follow us"
                     android:textColor="@color/black"
                     android:textSize="18sp"
                     android:textStyle="bold"

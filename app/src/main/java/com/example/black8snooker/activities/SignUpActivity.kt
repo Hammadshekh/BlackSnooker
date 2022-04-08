@@ -73,12 +73,10 @@ class SignUpActivity : AppCompatActivity() {
         val email = binding.userEmailEditText.text.trim().toString()
         val name = binding.userNameEditText.text.trim().toString()
         val password = binding.userPasswordEditText.text.trim().toString()
-
         var view: View? = null
         var flag = false
 
         when {
-
             email.isEmpty() -> {
                 binding.userEmailEditText.error = "Field is required"
                 view = binding.userEmailEditText
@@ -94,13 +92,11 @@ class SignUpActivity : AppCompatActivity() {
                 view = binding.userPasswordEditText
                 flag = true
             }
-
             password.length < 8 -> {
                 binding.userPasswordEditText.error = "Minimum 8 characters"
                 view = binding.userPasswordEditText
                 flag = true
             }
-
         }
         return if (flag) {
             view?.requestFocus()
